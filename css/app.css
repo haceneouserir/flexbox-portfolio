@@ -1,0 +1,307 @@
+/* Framework of website */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-1 {
+  font-size: 3.5em;
+}
+
+.title-2 {
+  font-size: 3em;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.float {
+  float: left;  
+}
+
+.clear-fix {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #636E72;
+  font-family: sans-serif;
+}
+
+/* Back to top btn */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#back-to-top:hover {
+  background-color: #636E72;
+}
+
+/* Style Header */
+header {
+  background-color: #0984E3;
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #000;
+}
+
+/* Style Navbar */
+.navbar {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Navbar items */
+.navbar .item {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #000;
+}
+
+.item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hide the icon of small screens  */
+.navbar .icon {
+  display: none;
+}
+
+/* Style Multi sections & Footer */
+.portfolio, .services, .review, .contactMe, footer {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Add Flexbox properties */
+.skills, .allServices, .cards, footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skills images */
+.html, .css, .js {
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+}
+
+/* Services divs */
+.service1, .service2, .service3 {
+  width: 200px;
+  height: 350px;
+  border: 5px solid #0984E3;
+  margin: 20px;
+}
+
+/* Service description div */
+.servDescription {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Service title div */
+.servTitle {
+  border-bottom: 5px solid #0984E3;
+}
+
+/* Recommended service div */
+.recommended {
+  margin-top: 50px;
+  padding-top: 20px;
+  font-weight: bold;
+  text-decoration: 5px overline #000;
+  font-size: 1.5em;
+}
+
+/* Style the cards of clients reviews */
+.card1, .card2, .card3 {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  border: 5px solid #0984E3;
+  padding: 5px;
+}
+
+/* Photo of clients */
+.cardPhoto {
+  display: block;
+  margin: auto;
+  width: 70px;
+  padding: 5px;
+}
+
+/* Contact info div */
+.contactInfo {
+  border: 5px solid #0984E3;
+  padding: 50px;
+  margin: 50px;
+}
+
+/* Contact info paragraph */
+.contactInfo p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Contact addresses */
+.contactInfo address > span {
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: #0984E3;
+  border-top: 5px solid #000;
+  margin-bottom: 0;
+}
+
+/* Copyright & Social divs */
+.copyright, .social {
+  margin: 50px;
+}
+
+/* copyright text */
+.copyright {
+  font-size: 1.2em;
+}
+
+/* Social buttons */
+.social {
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.social i {
+  padding: 5px;
+}
+
+/* Responsive web design media queries */
+@media screen and (max-width: 768px) {
+  .navbar a {
+    display: none;
+  }
+
+  .navbar .icon {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a {
+    display: block;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .title-1 {
+    font-size: 3em;
+  }
+
+  .html, .css, .js {
+    padding: 5px;
+  }
+
+  .skills, .allServices, .cards, footer {
+    flex-direction: column;
+  }
+
+  .service1, .service2, .service3 {
+    margin: 30px;
+  }
+
+  .recomended {
+    font-size: 1.3em;
+  }
+
+  .card1, .card2, .card3 {
+    margin: 30px;
+  }
+
+  .contactInfo {
+    padding: 30px;
+  }
+
+  .contactInfo address > span {
+    display: block;
+    padding: 5px;
+  }
+
+  footer {
+    height: auto;
+  }
+  
+  .copyright, .social {
+    margin: 5px;
+  }
+  
+  .copyright {
+    font-size: 1.2em;
+  }
+  
+  .social {
+    font-size: 1.7em;
+  }
+  
+  .social i {
+    padding: 20px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .title-1 {
+    font-size: 2em;
+  }
+
+  .contactInfo {
+    padding: 5px;
+    margin: 20px;
+  }
+  
+
+  .contactInfo p {
+    font-size: 1em;
+  }
+  
+  .contactInfo address > span {
+    padding: 10px;
+  }
+
+  .social i {
+    padding: 12px;
+  }
+}
