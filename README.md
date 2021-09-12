@@ -1,2 +1,2 @@
-# flexbox-portfolio
-Flexbox Portfolio Template
+# Flexbox Portfolio Template
+Simple portfolio template with Flexbox layout module.
