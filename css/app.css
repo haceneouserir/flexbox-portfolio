@@ -53,7 +53,7 @@ body {
   background-color: #636E72;
 }
 
-/* Style Header */
+/* Style header */
 header {
   background-color: #0984E3;
   width: 100%;
@@ -61,7 +61,7 @@ header {
   border-bottom: 5px solid #000;
 }
 
-/* Style Navbar */
+/* Style navbar */
 .navbar {
   width: 100%;
   padding: 10px;
@@ -86,7 +86,7 @@ header {
   display: none;
 }
 
-/* Style Multi sections & Footer */
+/* Style multi sections & footer */
 .portfolio, .services, .review, .contactMe, footer {
   width: 100%;
   height: auto;
@@ -94,7 +94,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* Add Flexbox properties */
+/* Add flexbox properties */
 .skills, .allServices, .cards, footer {
   display: flex;
   flex-direction: row;
@@ -172,7 +172,7 @@ header {
   padding: 10px;
 }
 
-/* Footer */
+/* Style footer */
 footer {
   width: 100%;
   height: 75px;
@@ -181,7 +181,7 @@ footer {
   margin-bottom: 0;
 }
 
-/* Copyright & Social divs */
+/* Copyright & social divs */
 .copyright, .social {
   margin: 50px;
 }
