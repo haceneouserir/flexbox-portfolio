@@ -84,6 +84,7 @@ header {
 /* Hide the icon of small screens  */
 .navbar .icon {
   display: none;
+  cursor: pointer;
 }
 
 /* Style multi sections & footer */

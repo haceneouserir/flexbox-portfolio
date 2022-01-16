@@ -18,11 +18,15 @@ function backToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function myFunction() {
-  var nav = document.getElementById("myTopnav");
-  if (nav.className === "navbar") {
-    nav.className += " responsive";
-  } else {
-    nav.className = "navbar";
-  }
-}
+// function myFunction() {
+//   var nav = document.getElementById("myTopnav");
+//   if (nav.className === "navbar") {
+//     nav.className += " responsive";
+//   } else {
+//     nav.className = "navbar";
+//   }
+// }
+
+$('.icon').click(function () { 
+  $('#myTopnav').toggleClass('responsive');
+});
